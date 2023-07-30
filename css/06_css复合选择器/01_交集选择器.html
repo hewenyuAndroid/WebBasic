@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>交集选择器</title>
+    <style>
+        /* p元素 && 包含 bg 的样式，注意: 元素必须写在第一个位置 */
+        p.bg {
+            background-color: aqua;
+        }
+
+        span.bg.text-color {
+            color: red;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>这是一个h1文本</h1>
+    <h1>这是第二个h1文本</h1>
+    <!-- 此时h2标签的样式不生效 -->
+    <h2 class="bg">这是一个h2文本</h2>
+    <p class="bg">这是一行文本p</p>
+    <!-- 声明 bg 和 text-color 类型 -->
+    <span class="bg text-color">这是一行文本span</span>
+</body>
+
+</html>
