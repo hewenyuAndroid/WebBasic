@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>并集选择器</title>
+    <style>
+        #title {
+            color: black;
+        }
+
+        .demo1 {
+            color: red;
+        }
+
+        .demo2 {
+            color: blue;
+        }
+
+        /* 并集选择器: 给包含 demo1 demo2 类型的元素和id为title的元素，添加样式 */
+        .demo1,
+        #title,
+        .demo2 {
+            background-color: bisque;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">这是一个h1文本</h1>
+    <h1 class="demo1">这是第二个h1文本</h1>
+    <h2 class="demo2">这是一个h2文本</h2>
+    <p>这是一行文本p</p>
+    <span>这是一行文本span</span>
+</body>
+
+</html>
