@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        /* 选中 ul 下的所有li元素 */
+        ul li {
+            color: red;
+        }
+
+        .demo p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>zhangsan</li>
+        <li>lisi</li>
+        <li>
+            <ul>
+                <!-- 这里的li也会被选中 -->
+                <li>name</li>
+                <li>age</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div>
+        <p>这是一段文本</p>
+        <!-- demo 下的p元素会被选中 -->
+        <div class="demo">
+            <p>这又是一段文本</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
