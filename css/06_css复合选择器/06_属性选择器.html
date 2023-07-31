@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+
+    <style>
+        /* 选中 包含title 属性的元素 */
+        [title] {
+            background-color: aqua;
+        }
+
+        /* 选中 包含title 属性 且 值以 a 开头的元素 */
+        [title^="a"] {
+            color: red;
+        }
+
+        /* 选中 包含title 属性 且 值 包含 a 的元素 */
+        [title*="a"] {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p title="aa">这是第一行文本</p>
+    <p title="bbaa">这是第二行文本</p>
+    <p name="cc">第三行文本</p>
+    <div>
+        <p>这是div里面的文本</p>
+    </div>
+
+</body>
+
+</html>
