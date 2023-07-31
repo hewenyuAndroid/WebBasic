@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟选择器</title>
+    <style>
+        /* 直接兄弟选择器 */
+        div+p {
+            color: red;
+        }
+
+        /* 通用兄弟选择器 */
+        div~p {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        div + p 选择器不会选中该 p 元素 
+        div ~ p 选择器不会选中该 p 元素
+    -->
+    <p>我是div上的p</p>
+    <div>
+        <span>我是一个span</span>
+    </div>
+    <!-- 
+        div + p 选择器选中的 p 元素
+        div ~ p 选择器选中的 p 元素
+     -->
+    <p>我是div下的p</p>
+    <!-- 
+        div + p 选择器不会选中的 p 元素 
+        div ~ p 选择器选中的 p 元素
+    -->
+    <p>我是div下下的p</p>
+
+</body>
+
+</html>
