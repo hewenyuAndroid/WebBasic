@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>动态伪类选择器</title>
+    <style>
+        /* 超链接未被访问时 */
+        a:link {
+            color: red;
+        }
+
+        /* 超链接访问过后 */
+        a:visited {
+            color: aqua;
+        }
+
+        a:hover {
+            color: cadetblue;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        p:hover {
+            color: blue;
+        }
+
+        p:active {
+            color: red;
+        }
+
+
+        input:focus {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://juejin.im">掘金</a>
+    <a href="https://www.taobao.com">淘宝</a>
+
+    <p>这是一行文本</p>
+
+    <input type="text">
+
+</body>
+
+</html>
