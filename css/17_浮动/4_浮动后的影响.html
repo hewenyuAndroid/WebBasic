@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>浮动后的影响</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: aqua;
+
+        }
+
+        .p1,
+        .p2,
+        .p3 {
+            float: left;
+        }
+
+        /*
+        2. 后面兄弟元素会顶上来，但是里面的文字会被甩下来
+        */
+        .p4{
+            color:red;
+        }
+
+        /* 
+        1. 父元素没有设置高度时，所有的子元素浮动后，父元素的高度为0，此时父元素的后面的兄弟元素会顶上来
+        */
+        div {
+            /* width: 500px;
+            height: 300px; */
+            background-color: #99666666;
+            border: 1px solid #000;
+        }
+
+        img {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p class="p1">1</p>
+        <p class="p2">2</p>
+        <p class="p3">3</p>
+        <p class="p4">4444444444444444</p>
+    </div>
+    <div style="background-color:orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda expedita rem
+        similique at laboriosam, magnam, ipsam inventore odit odio ipsum ex ad beatae quia, consequuntur quam dolore
+        modi atque? Doloribus libero eos ut consequatur, assumenda amet quidem est quae doloremque maxime id cumque
+        explicabo aliquam. Quas, explicabo illo neque rem dolores impedit aspernatur suscipit vel, dolore incidunt totam
+        aliquam laborum! Fuga in rerum repudiandae suscipit, labore optio iste ratione nobis velit dolorem laborum
+        doloribus perferendis porro enim, sequi, delectus nulla quam? Recusandae quidem nobis voluptatum quam quaerat
+        itaque aliquam reiciendis molestias ratione nesciunt exercitationem quisquam laborum sit error magnam optio
+        atque, debitis tempore. Quibusdam repellendus perspiciatis id consequuntur saepe suscipit enim temporibus, ipsa
+        minima dolores laudantium inventore recusandae nam. Quo harum sunt reprehenderit nisi? Error quia quibusdam
+        possimus tempore incidunt. Doloribus vitae quis nisi quod, aperiam molestias id quibusdam voluptate recusandae
+        iure tempore hic doloremque similique corrupti expedita non odit a natus. Eius, harum iste, dolor omnis, saepe
+        dolore illo aliquid impedit officia explicabo itaque dicta eos exercitationem at tempora perspiciatis voluptate
+        ad eaque mollitia maiores obcaecati numquam. Veniam ex facere fugit ullam est velit officiis a autem perferendis
+        ratione aliquid dolor voluptate magnam, illo alias sequi totam, ab nemo?</div>
+
+    <pr />
+
+    <img src="../imgs/fudongwenti.png" />
+
+</body>
+
+</html>
