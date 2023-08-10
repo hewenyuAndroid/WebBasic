@@ -21,7 +21,7 @@
         }
 
         .clear_fix::after {
-            content:'';
+            content: '';
             display: block;
             clear: both;
         }
@@ -40,7 +40,6 @@
             width: 540px;
             margin-left: 10px;
             margin-right: 10px;
-            ;
         }
 
         .banner2 {
@@ -60,7 +59,65 @@
             width: 100%;
             height: 30px;
             line-height: 30px;
-            margin-top: 10px;;
+            margin-top: 10px;
+        }
+
+        .content {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .content_left,
+        .content_midden {
+            width: 370px;
+            margin-right: 10px;
+        }
+
+        .item1,
+        .item2 {
+            width: 370px;
+            height: 200px;
+            line-height: 60px;
+        }
+
+        .item3,
+        .item5 {
+            width: 178px;
+            height: 200px;
+            line-height: 60px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .item4,
+        .item6 {
+            width: 178px;
+            height: 200px;
+            line-height: 60px;
+            margin-top: 10px;
+        }
+
+        .item7,
+        .item8,
+        .item9 {
+            width: 198px;
+            line-height: 60px;
+            height: 130px;
+            margin-bottom: 10px;
+        }
+
+        .item_border {
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        .page-footer {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #ccc;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -76,6 +133,30 @@
         </div>
 
         <div class="menu">菜单</div>
+
+        <div class="content clear_fix">
+
+            <div class="content_left left_fix">
+                <div class="item1 item_border">栏目1</div>
+                <div class="item3 item_border left_fix">栏目3</div>
+                <div class="item4 item_border left_fix">栏目4</div>
+            </div>
+
+            <div class="content_midden left_fix">
+                <div class="item2 item_border">栏目2</div>
+                <div class="item5 item_border left_fix">栏目5</div>
+                <div class="item6 item_border left_fix">栏目6</div>
+            </div>
+
+            <div class="left_fix">
+                <div class="item7 item_border">栏目7</div>
+                <div class="item8 item_border">栏目8</div>
+                <div class="item9 item_border">栏目9</div>
+            </div>
+
+        </div>
+
+        <div class="page-footer">页脚</div>
 
     </div>
 
