@@ -1,0 +1,61 @@
+/*------------------------- 顶部导航条 -------------------------*/
+.topbar {
+    background-color: #ECECEC;
+    height: 30px;
+}
+
+.topbar .container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* 外层容器去除font-size带来的影响 */
+.container .welcome {
+    line-height: 30px;
+    font-size: 0;
+    color: #666;
+}
+
+.container .welcome span,
+.container .welcome a {
+    font-size: 12px;
+}
+
+.welcome-tips {
+    margin-right: 28px;
+}
+
+.welcome .login {
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.welcome .register {
+    padding-left: 10px;
+}
+
+
+.nav .list {
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.nav .list li {
+    float: left;
+}
+
+.nav .list li a {
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #666;
+    border-right: 1px solid #666;
+}
+
+.nav .list li:first-child a {
+    padding-left: 0px;
+}
+
+.nav .list li:last-child a{
+    padding-right: 0px;
+    border-right: 0px;
+}
