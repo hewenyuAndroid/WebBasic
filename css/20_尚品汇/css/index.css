@@ -185,11 +185,14 @@
     border-left: 1px solid #666;
 }
 
+
+
+
 .main-content .banner {
     width: 690px;
     height: 458px;
-    background-color: #CCC;
     margin: 0 10px;
+    background-image: url(../imgs/banner主图.png);
 }
 
 .main-content .other-nav {
