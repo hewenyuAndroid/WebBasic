@@ -67,7 +67,7 @@
 
 .header {
     height: 120px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
 }
 
 .search form {
