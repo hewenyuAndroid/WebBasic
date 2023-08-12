@@ -1,12 +1,12 @@
-/*------------------------- 顶部导航条 -------------------------*/
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* #region 顶部导航条 */
 .topbar {
     background-color: #ECECEC;
     height: 30px;
-}
-
-.topbar .container {
-    width: 1190px;
-    margin: 0 auto;
 }
 
 /* 外层容器去除font-size带来的影响 */
@@ -55,7 +55,40 @@
     padding-left: 0px;
 }
 
-.nav .list li:last-child a{
+.nav .list li:last-child a {
     padding-right: 0px;
     border-right: 0px;
 }
+
+/* #endregion 顶部导航条 */
+
+
+/* #region header 区域 */
+
+.header {
+    height: 120px;
+    background-color: skyblue;
+}
+
+.search form {
+    font-size: 0px;
+    margin-top: 42px;
+}
+
+.search form input {
+    width: 508px;
+    height: 34px;
+    border: 1px solid #DD302D;
+}
+
+.search form button {
+    width: 80px;
+    height: 36px;
+    background-color: #DD302D;
+    vertical-align: top;
+    background-image: url(../imgs/serch_icon.png);
+    background-repeat: no-repeat;
+    background-position: 28px 6px;
+}
+
+/* #endregion header区域 */
