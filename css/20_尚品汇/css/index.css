@@ -297,3 +297,20 @@
 }
 
 /* #endregion 主要内容 */
+
+/* #region 秒杀 */
+
+.seckill {
+    margin-top: 10px;
+}
+
+.seckill .container img{
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+.seckill .container img:last-child{
+    margin-right: 0px;
+}
+
+/* #endregion 秒杀 */
